@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
-
+gem 'simple_form', '~> 3.1.0'
 gem 'arel', '6.0.0.beta2'
+gem 'bootstrap', '~> 0.0.1'
+gem 'bootstrap-sass', '~> 3.3.1.0'
+gem 'autoprefixer-rails'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.beta2'
