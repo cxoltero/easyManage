@@ -10,7 +10,6 @@ def new
 end
 
 def show
-	# @recipe = 
 end
 
 def create
@@ -20,6 +19,22 @@ def create
 	else
 		render 'new'
 	end
+end
+
+def edit
+end
+
+def update
+	if @recipe.update(recipe_params)
+		redirect_to @recipe
+	else
+		render 'edit'
+	end
+end
+
+def destroy
+	@recipe.destroy
+	redirect_to root_pth, notice: "Succesfully deleted recipe!"
 end
 
 def find_recipe
