@@ -42,47 +42,49 @@ font-weight: bold;
 margin-bottom: 50px;
 @include box-shadow;
 border: none;
-.navbar-brand {
-text-transform: uppercase;
-letter-spacing: -1px;
-font-weight: bold;
-font-size: 25px;
-a {
-color: $red;
-}
-}
+	.navbar-brand {
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+	font-size: 25px;
+		a{
+		color: $red;
+		} 
+	}
 }
 .recipe {
 background: white;
 border-radius: 5px;
 margin-bottom: 40px;
 @include box-shadow;
-.image_wrapper {
-max-width: 100%;
-border-radius: 5px 5px 0 0;
-overflow: hidden;
+	.image_wrapper {
+	max-width: 100%;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	}
+	img {
+	width: 100%;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	&:hover {
+	transform: scale(1.075);
+	}
+	}
+
+	h2 {
+	padding: 15px 5%;
+	margin: 0;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1.5;
+		a {
+		color: $red;
+		}
+	}
 }
-img {
-width: 100%;
--webkit-transition: all .3s ease-out;
--moz-transition: all .3s ease-out;
--o-transition: all .3s ease-out;
-transition: all .3s ease-out;
-&:hover {
-transform: scale(1.075);
-}
-}
-h2 {
-padding: 15px 5%;
-margin: 0;
-font-size: 20px;
-font-weight: normal;
-line-height: 1.5;
-a {
-color: $red;
-}
-}
-}
+
 #recipe_top {
 margin-bottom: 50px;
 }
