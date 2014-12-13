@@ -6,7 +6,7 @@ gem 'bootstrap-sass', '~> 3.3.1.0'
 gem 'autoprefixer-rails'
 gem 'paperclip', '~> 4.2.1'
 gem 'rmagick', '~> 2.13.4'
-
+gem 'cocoon', '~> 1.2.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.beta2'
