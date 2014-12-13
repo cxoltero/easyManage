@@ -4,6 +4,8 @@ gem 'simple_form', '~> 3.1.0'
 gem 'arel', '6.0.0.beta2'
 gem 'bootstrap-sass', '~> 3.3.1.0'
 gem 'autoprefixer-rails'
+gem 'paperclip', '~> 4.2.1'
+gem 'rmagick', '~> 2.13.4'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
