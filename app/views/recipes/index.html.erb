@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>
-		recipes
-	</title>
-</head>
-<body>
-<h1>Recipes#index</h1>
-
-</body>
-</html>
+<% @recipe.each do |recipe| %>
+  <h2>
+    <%= link_to recipe.title, recipe %>
+  </h2>
+<% end %>
