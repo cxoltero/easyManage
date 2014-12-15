@@ -1,10 +1,12 @@
 class NotesController < ApplicationController
+	before_action :find_note, only: [:show, :edit, :update, :destroy]
+
 	def index
-		@note= Notes.all
+		@notes = Note.all.order("created_at DESC")
 	end
 
 	def show
-		@note=Note.find_note()
+		# @note=Note.find_note()
 	end
 
 	def new
@@ -12,6 +14,12 @@ class NotesController < ApplicationController
 	end
 
 	def create
+		@note = Note.new(note_params)
+		if @note.save
+			redirect_to @note, notice: "Succesfully created new note"
+		else
+		render 'new'
+		end
 	end
 
 
@@ -23,8 +31,10 @@ class NotesController < ApplicationController
 
 	private
 	def find_note
+		@note=Note.find(params[:id])
 	end
 
-	def notes_params
+	def note_params
+		params.require(:note).permit(:title, :content)
 	end
 end
