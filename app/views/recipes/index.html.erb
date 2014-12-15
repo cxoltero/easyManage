@@ -1,4 +1,7 @@
 <div class="container">
+  <div class="options">
+    <%= link_to "Add recipe", new_recipe_path %>
+  </div>
 <% @recipe.each_slice(3) do |recipes| %>
   <div class="row">
     <% recipes.each do |recipe| %>
@@ -14,7 +17,7 @@
           </h2>
         </div>
       </div>
-    <% end %>
+    <%end%>
   </div>
 <% end %>
 </div>

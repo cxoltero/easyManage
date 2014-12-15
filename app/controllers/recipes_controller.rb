@@ -34,7 +34,7 @@ end
 
 def destroy
 	@recipe.destroy
-	redirect_to root_pth, notice: "Succesfully deleted recipe!"
+	redirect_to root_path, notice: "Succesfully deleted recipe!"
 end
 
 
