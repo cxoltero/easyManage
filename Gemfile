@@ -8,6 +8,8 @@ gem 'paperclip', '~> 4.2.1'
 gem 'rmagick', '~> 2.13.4'
 gem 'cocoon', '~> 1.2.6'
 
+gem 'rails_12factor', '~> 0.0.3'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.beta2'
 # Use postgresql as the database for Active Record

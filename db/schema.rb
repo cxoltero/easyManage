@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141215014627) do
+ActiveRecord::Schema.define(version: 20141215020453) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,16 @@ ActiveRecord::Schema.define(version: 20141215014627) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
   end
+
+  create_table "task_items", force: true do |t|
+    t.string   "content"
+    t.date     "due_date"
+    t.integer  "todo_list_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "task_items", ["todo_list_id"], name: "index_task_items_on_todo_list_id", using: :btree
 
   create_table "task_lists", force: true do |t|
     t.string   "title"
