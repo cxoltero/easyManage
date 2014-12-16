@@ -4,4 +4,8 @@ Rails.application.routes.draw do
     root 'welcome#index'
     resources :recipes
     resources :notes
+
+   resources :tasklists do
+    resources :tasks
+   end
 end

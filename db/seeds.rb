@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Plutus::Asset.create(:name => "Accounts Receivable")
+Plutus::Asset.create(:name => "Cash")
+Plutus::Revenue.create(:name => "Sales Revenue")
+Plutus::Liability.create(:name => "Expense")
+Plutus::Liability.create(:name => "Sales Tax Payable")

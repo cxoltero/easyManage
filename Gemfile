@@ -9,6 +9,7 @@ gem 'paperclip', '~> 4.2.1'
 gem 'rmagick', '~> 2.13.4'
 gem 'cocoon', '~> 1.2.6'
 gem 'devise'
+gem 'pry-rails', '~> 0.3.2'
 
 gem 'rails_12factor', group: :production
 
