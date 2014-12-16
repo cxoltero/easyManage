@@ -1,0 +1,9 @@
+<%= simple_form_for :tasklist, url: tasklist_index_path do |f| %>
+	<p>
+	<%= f.label :title%><br>
+	<%= f.text_field :title%>
+	</p>
+	<p>
+	<%= f.submit %>
+	</p>
+<%end%>

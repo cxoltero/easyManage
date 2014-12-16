@@ -5,7 +5,5 @@ Rails.application.routes.draw do
     resources :recipes
     resources :notes
 
-   resources :tasklists do
-    resources :tasks
-   end
+    resources :tasklist
 end
