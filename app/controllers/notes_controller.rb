@@ -13,6 +13,10 @@ class NotesController < ApplicationController
 		@note=Note.new
 	end
 
+	def edit
+		@note = Note.find(params[:id])
+	end
+
 	def create
 		@note = Note.new(note_params)
 		if @note.save
