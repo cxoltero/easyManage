@@ -1,9 +1,9 @@
 <div class="container">
 	<div class="form">
-		<%= simple_form_for [@month, @month.incomes.build] do |f| %>
+		<%= simple_form_for [@month, @month.expenses.build] do |f| %>
 			<%= f.input :amount%>
-			<%= f.input :from%>
-			<%= f.input :date%>
+			<%= f.input :to%>
+			<%= f.input :duedate%>
 			<%= f.submit %>
 		<%end%>
 	</div>

@@ -1,7 +1,7 @@
-class IncomeController < ApplicationController
+class IncomesController < ApplicationController
 	def create
 		@month = Month.find(params[:month_id])
-		@income = @month.incomes.create(params[:income].permit(:name, :amount))
+		@income = @month.incomes.create(params[:income].permit(:amount, :from, :date))
 		redirect_to month_path(@month)
 	end
 
@@ -9,6 +9,6 @@ class IncomeController < ApplicationController
 		@month = Month.find(params[:month_id])
 		@income = @month.incomes.find(params[:id])
 		@income.destroy
-		redirect_to month_index_path, notice: "Succesfully deleted month!"
+		redirect_to month_path(@month), notice: "Succesfully deleted month!"
 	end
 end

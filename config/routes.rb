@@ -7,7 +7,8 @@ Rails.application.routes.draw do
 	resources :tasklist do
 		resources :tasks
 	end
-	resources :month do
+	resources :months do
 		resources :incomes
+		resources :expenses
 	end
 end

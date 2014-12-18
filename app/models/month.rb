@@ -3,6 +3,6 @@ class Month < ActiveRecord::Base
 	has_many :incomes
 	validates :name, presence: true
 
-	accepts_nested_attributes_for :expenses
-	accepts_nested_attributes_for :incomes
+	# accepts_nested_attributes_for :expenses
+	# accepts_nested_attributes_for :incomes
 end

@@ -1,4 +1,4 @@
-class MonthController < ApplicationController
+class MonthsController < ApplicationController
 	before_action :find_month, only: [:show, :edit, :update, :destroy]
 
 	def index

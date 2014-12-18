@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141218161943) do
+ActiveRecord::Schema.define(version: 20141218203446) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,28 @@ ActiveRecord::Schema.define(version: 20141218161943) do
   end
 
   add_index "directions", ["recipe_id"], name: "index_directions_on_recipe_id", using: :btree
+
+  create_table "expenses", force: true do |t|
+    t.integer  "amount"
+    t.string   "to"
+    t.date     "duedate"
+    t.integer  "month_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "expenses", ["month_id"], name: "index_expenses_on_month_id", using: :btree
+
+  create_table "incomes", force: true do |t|
+    t.integer  "amount"
+    t.string   "from"
+    t.date     "date"
+    t.integer  "month_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "incomes", ["month_id"], name: "index_incomes_on_month_id", using: :btree
 
   create_table "ingredients", force: true do |t|
     t.string   "name"
