@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="options">
+    <%= link_to "New Month", new_month_path %>
+  </div>
+<% @months.each_slice(4) do |months| %>
+  <div class="row">
+    <% months.each do |month| %>
+      <div class="col-md-3">
+        <div class="month">
+          <h2><%= link_to month.name, month %></h2>
+        </div>
+		<div class="date">
+	        <small>Created on <%= month.created_at.strftime("%B, %d, %Y") %></small>
+        </div>
+      </div>
+    <%end%>
+  </div>
+<% end %>
+</div>
