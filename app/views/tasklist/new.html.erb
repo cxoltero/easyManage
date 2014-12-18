@@ -1,6 +1,7 @@
 <div class="container">
-<div class="page_wrapper">
 <h1>New List</h1>
-	<%= render 'form' %>
-	</div>
+<%= render 'form' %><br>
+<%= link_to "All Lists", tasklist_index_path(@tasklist), class: "button" %>
+<%= link_to "Back", root_path, class: "btn btn-default" %>
+
 </div>

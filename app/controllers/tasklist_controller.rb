@@ -1,5 +1,5 @@
 class TasklistController < ApplicationController
-		before_action :find_tasklist, only: [:show, :edit, :update, :destroy]
+	before_action :find_tasklist, only: [:show, :edit, :update, :destroy]
 
 	def index
 		@tasklists= Tasklist.all.order("created_at DESC")
@@ -20,10 +20,11 @@ class TasklistController < ApplicationController
 		else
 			render 'new'
 		end
+
 	end
 
 	def edit
-		@tasklist = Tasklist.find(params[:id])
+
 	end
 
 	def update

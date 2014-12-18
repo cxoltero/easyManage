@@ -1,0 +1,9 @@
+<div class="container">
+	<div class="form">
+		<%= simple_form_for [@tasklist, @tasklist.tasks.build] do |f| %>
+			<%= f.input :name%>
+			<%= f.input :duedate%>
+			<%= f.submit %>
+		<%end%>
+	</div>
+</div>

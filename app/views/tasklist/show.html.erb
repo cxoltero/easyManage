@@ -1,6 +1,14 @@
 <div class="container">
-	<h1><%= @tasklist.title %></h1>
-	<p>Created <%= time_ago_in_words(@tasklist.created_at) %> ago</p>
+	<div id="tasklistbody">
+		<h1><%= @tasklist.title %></h1>
+		<p>Created <%= time_ago_in_words(@tasklist.created_at) %> ago</p>
+	</div>
+	<div id="tasks">
+		<h2><%= @tasklist.tasks.count %> Tasks </h2>
+			<%= render @tasklist.tasks %>
+	</div>
+		<h3>Add New Task</h3>
+		<%= render "tasks/form"%>
 	<div class="row">
 		<div class="col-md-12">
 			<%= link_to "Back", tasklist_index_path, class: "btn btn-default" %>

@@ -1,22 +1,202 @@
+/*$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";*/
+/*// bower:scss*/
+/*@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";*/
+/*// endbower*/
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  /*background: url(/images/guac.jpg)no-repeat top center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  /*background-color: white;*/
+  margin-top: 0;
+  border-bottom: 1px solid #e5e5e5;
+  /* Make the masthead heading the same height as the navigation */
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 10px;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+	font-size: 45px;
+	}
+}
+
+/* for the nav tags on the top right of the screen */
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,.nav-pills > li > a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius:4px;
+/*  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #FF6600;*/
+  color: #red !important;
+  /*background-color: transparent !important;*/
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius:4px;
+  /*border-bottom-width: 4px;
+  border-bottom-style: solid;*/
+  /*border-bottom-color: #FF6600;*/
+  color: #red !important;
+  background-color: orange !important;
+}
+
+
+
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+	p + h4 {
+	  margin-top: 28px;
+	}
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-top: -40px;
+    height: 120px;
+    padding: 50px 12%;
+    background-color: black;
+    margin-bottom: 20px;
+    a{
+    color: white;
+    }
+    ul{
+      font-size: 16px;
+    }
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+    background: rgb(34,34,34); /* for IE */
+    background: rgba(34,34,34,0.75);
+    color: white;
+    text-align: center;
+  	border-bottom: 1px solid #e5e5e5;
+
+	  .btn {
+	    font-size: 21px;
+	    padding: 14px 24px;
+	  }
+  }
+}
+
+
+
 
 #recipes1{
-		background: gray url(http://cincodemayova.com/wp-content/uploads/2014/08/MexicanFood.jpg) no-repeat center center;
+    background: gray url(http://cincodemayova.com/wp-content/uploads/2014/08/MexicanFood.jpg) no-repeat center center;
 }
 
 
 #tasks1{
-		background: gray url(https://c2.staticflickr.com/6/5535/10519508175_f3ced9dfc2_z.jpg)no-repeat center center;
+    background: gray url(https://c2.staticflickr.com/6/5535/10519508175_f3ced9dfc2_z.jpg)no-repeat center center;
 }
 
 
 #notes1{
-		background: gray url(http://michaelhyatt.com/wp-content/uploads/2010/07/iStock_000000435078Small.jpg)no-repeat center center;
+    background: gray url(http://michaelhyatt.com/wp-content/uploads/2010/07/iStock_000000435078Small.jpg)no-repeat center center;
 }
 
 #finances1{
-		background: gray url(http://indobeta.com/wp-content/uploads/2012/06/Pengertian-Dan-Manfaat-Commercial-Invoice.jpg)no-repeat center center  ;
+    background: gray url(http://indobeta.com/wp-content/uploads/2012/06/Pengertian-Dan-Manfaat-Commercial-Invoice.jpg)no-repeat center center  ;
 }
 
+#homeHeader{
+  background-color: white;
+  border-radius: 4px;
+  height: 150px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.home_button{
+  margin-top: 50px;
+  /*padding-top: 80px;*/
+  border-radius: 4px;
+  text-align: center;
+  list-style-type: none;
+  width:100%;
+  height: 220px;
+
+  a{
+    line-height: 200px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    background: rgb(34,34,34); /* for IE */
+      background: rgba(34,34,34,0.75);
+      &:hover, &:focus, &:active {
+	    -webkit-box-shadow: 5px 0px 15px 14px rgba(0,0,0,0.75);
+	    -moz-box-shadow: 5px 0px 15px 14px rgba(0,0,0,0.75);
+	    box-shadow: 5px 0px 15px 14px rgba(0,0,0,0.75);
+	  }
+
+  }
+}
 #homeHeader{
 	background-color: white;
 	border-radius: 4px;

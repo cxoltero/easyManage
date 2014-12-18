@@ -22,7 +22,6 @@ def create
 end
 
 def edit
-	@recipe = Recipe.find(params[:id])
 end
 
 def update
