@@ -1,0 +1,9 @@
+<div class="container">
+	<div class="form">
+		<%= simple_form_for [@month, @month.incomes.build] do |f| %>
+			<%= f.input :name%>
+			<%= f.input :amount%>
+			<%= f.submit %>
+		<%end%>
+	</div>
+</div>

@@ -3,23 +3,12 @@
 		<h1><%= @month.name %></h1>
 		<p>Created <%= time_ago_in_words(@month.created_at) %> ago</p>
 	</div>
-	<div id="incomes">
-		<h2><%= @month.incomes.count %> incomes </h2>
-			<%= render @month.incomes %>
-		<h3>Add Income</h3>
-		<%= render "incomes/form"%>
-	</div>
-	<div id="expenses">
-		<h2><%= @month.expenses.count %> expenses </h2>
-			<%= render @month.expenses %>
-	</div>
-		<h3>Add Expense</h3>
-		<%= render "expenses/form"%>
+
 	<div class="row">
 		<div class="col-md-12">
-			<%= link_to "Back", month_index_path, class: "btn btn-default" %>
-			<%= link_to "Edit", edit_month_path, class: "btn btn-default" %>
-			<%= link_to "Delete", month_path, method: :delete, data: {confirm: "Are you sure you want to delete this list?"}, class: "btn btn-default" %>
+			<%= link_to "Back", tasklist_index_path, class: "btn btn-default" %>
+			<%= link_to "Edit", edit_tasklist_path, class: "btn btn-default" %>
+			<%= link_to "Delete", tasklist_path, method: :delete, data: {confirm: "Are you sure you want to delete this list?"}, class: "btn btn-default" %>
 		</div>
 	</div>
 </div>

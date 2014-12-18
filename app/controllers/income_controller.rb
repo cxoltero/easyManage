@@ -1,2 +1,0 @@
-class IncomeController < ApplicationController
-end

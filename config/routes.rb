@@ -9,6 +9,5 @@ Rails.application.routes.draw do
 	end
 	resources :month do
 		resources :incomes
-		resources :expenses
 	end
 end
