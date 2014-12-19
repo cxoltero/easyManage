@@ -10,6 +10,7 @@ gem 'rmagick', '~> 2.13.4'
 gem 'cocoon', '~> 1.2.6'
 gem 'devise'
 gem 'pry-rails', '~> 0.3.2'
+gem 'sass', '3.2.13'
 
 gem 'rails_12factor', group: :production
 
