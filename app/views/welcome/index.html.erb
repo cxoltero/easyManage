@@ -1,39 +1,37 @@
 <div class="container">
-<div id="welcomebody">
-	<!-- <div id="homeHeader"> -->
-		<div class="jumbotron">
-		  <h1>Restaurant Pro</h1>
-		  <p class="lead"><br>
-		    Your One Stop To Manage Your Food Business
-		  </p>
-		  <p><a class="btn btn-lg btn-success" ng-href="#">Sign Up! <span class="glyphicon glyphicon-ok"></span></a></p>
-		</div>
-	<!-- </div> -->
-	<div class="col-md-6">
-		<ul>
-			<li class="home_button" id= "tasks1">
-			  <%= link_to "Tasks", tasklist_index_path %>
-			</li>
-		</ul>
-
-		<ul>
-			<li class="home_button" id="notes1">
-			  <%= link_to "Notes", notes_path %>
-			</li>
-		</ul>
-	</div>	
-	<div class="col-md-6">
-		<ul>
-			<li class="home_button" id="recipes1">
-			  <%= link_to "Recipes", recipes_path %>
-			</li>
-		</ul>
-
-		<ul>
-			<li class="home_button" id="finances1">
-			  <%= link_to "Finances", months_path %>
-			</li>
-		</ul>
+	<div class="jumbotron">
+	  <h1>Restaurant Pro</h1>
+	  <p class="lead"><br>
+	    Your One Stop To Manage Your Food Business
+	  </p>
+	  <p><a class="btn btn-lg btn-success">Sign Up! <span class="glyphicon glyphicon-ok"></span></a></p>
 	</div>
-</div>
+	<div class="welcomebody">
+		<div class="col-md-6">
+			<ul>
+				<li class="home_button" id= "tasks1">
+				  <%= link_to "Tasks", tasklist_index_path %>
+				</li>
+			</ul>
+
+			<ul>
+				<li class="home_button" id="notes1">
+				  <%= link_to "Notes", notes_path %>
+				</li>
+			</ul>
+		</div>	
+		<div class="col-md-6">
+			<ul>
+				<li class="home_button" id="recipes1">
+				  <%= link_to "Recipes", recipes_path %>
+				</li>
+			</ul>
+
+			<ul>
+				<li class="home_button" id="finances1">
+				  <%= link_to "Finances", months_path %>
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>

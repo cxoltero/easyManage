@@ -2,18 +2,20 @@
   <div class="options">
     <%= link_to "Add List", new_tasklist_path %>
   </div>
-<% @tasklists.each_slice(4) do |tasklists| %>
-  <div class="row">
-    <% tasklists.each do |tasklist| %>
-      <div class="col-md-3">
-        <div class="tasklist">
-          <h2><%= link_to tasklist.title, tasklist %></h2>
-        </div>
-		<div class="date">
-	        <small>Created on <%= tasklist.created_at.strftime("%B, %d, %Y") %></small>
-        </div>
+  <div class="tasklist">
+    <% @tasklists.each_slice(4) do |tasklists| %>
+      <div class="row" id="tasklist">
+        <% tasklists.each do |tasklist| %>
+          <div class="col-md-3">
+            <div class="tasklist">
+              <h2><%= link_to tasklist.title, tasklist %></h2>
+            </div>
+    		<div class="date">
+    	        <small>Created on <%= tasklist.created_at.strftime("%B, %d, %Y") %></small>
+            </div>
+          </div>
+        <%end%>
       </div>
-    <%end%>
+    <% end %>
   </div>
-<% end %>
 </div>
