@@ -1,6 +1,4 @@
 <%= simple_form_for :month, url: months_path do |f| %>
-	<%= f.label :name%><br>
-	<%= f.text_field :name%>
+	<%= f.text_field :name, :autofocus => true, :label => false, :placeholder => 'Description', :input_html => { :class => "input-block-level" } %>
 	<%= f.submit %>
 <%end%>
-

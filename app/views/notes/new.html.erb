@@ -1,7 +1,8 @@
 <div class="container">
+  <div class="tasklist">
 <h1>New Note</h1>
 <%= render 'form' %><br>
-<%= link_to "All Notes", notes_path(@note), class: "button" %>
+<%= link_to "All Notes", notes_path(@note), class: "btn btn-default" %>
 <%= link_to "Back", root_path, class: "btn btn-default" %>
-
+</div>
 </div>

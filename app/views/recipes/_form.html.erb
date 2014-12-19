@@ -18,11 +18,10 @@
   <div class="panel-body">
     <div class = "titlepage">
       <div id="title">
-      <%= f.input :title, input_html: {class: "form_control"} %><br>
-      <%= f.input :description, input_html: {class: "form_control description"} %>
-      <br>
-      <label>Upload Image:</label>
-      <%= f.file_field :image, input_html: {class: 'form_control'}  %>
+      <%= f.input :title, :autofocus => true, :label => false, :placeholder => 'Title', :input_html => { :class => "input-block-level" } %><br>
+      <%= f.input :description, :autofocus => true, :label => false, :placeholder => 'Description', :input_html => { :class => "input-block-level description" } %><br>
+      <%= f.file_field :image, :class => "btn btn-default" %>
+
     </div>
     <div class="row">
       <div class="col-md-6">
