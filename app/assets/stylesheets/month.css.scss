@@ -1,5 +1,7 @@
 #monthbody{
 		h1{
+		font-weight: bold;
+		text-transform: capitalize;
 		padding-bottom: .95rem;
 		border-bottom: 1px solid $red;
 		color: green;
@@ -8,6 +10,7 @@
 	}
 }
 .preform{
+	margin-top: 10px;
 	border-top:1px solid $red;
 	form{
 		margin-left: 90px;
@@ -29,6 +32,10 @@ table{
     background: rgb(255,255,255); /* for IE */
     background: rgba(255,255,255,0.75);
    	margin-bottom: 20px;
+   	    u{
+    	 text-decoration: none;
+    	 border-bottom: 2px solid blue;
+    }
 }
 
 #incomes{
@@ -36,4 +43,8 @@ table{
     background: rgb(255,255,255); /* for IE */
     background: rgba(255,255,255,0.75);
     margin-bottom: 20px;
+    u{
+    	 text-decoration: none;
+    	 border-bottom: 2px solid blue;
+    }
 }
