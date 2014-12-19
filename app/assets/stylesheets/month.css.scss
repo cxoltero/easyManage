@@ -1,3 +1,39 @@
-// Place all the styles related to the month controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#monthbody{
+		h1{
+		padding-bottom: .95rem;
+		border-bottom: 1px solid $red;
+		color: green;
+		display: block;
+		text-align: center;
+	}
+}
+.preform{
+	border-top:1px solid $red;
+	form{
+		margin-left: 90px;
+	}
+}
+td {
+  padding-top: 3px; 
+} 
+th, td{
+		text-align: center;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#expenses{
+	padding: 1rem;
+    background: rgb(255,255,255); /* for IE */
+    background: rgba(255,255,255,0.75);
+   	margin-bottom: 20px;
+}
+
+#incomes{
+	padding: 1.5rem;
+    background: rgb(255,255,255); /* for IE */
+    background: rgba(255,255,255,0.75);
+    margin-bottom: 20px;
+}

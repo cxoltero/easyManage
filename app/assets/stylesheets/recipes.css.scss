@@ -6,6 +6,23 @@ box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
 }
 $red: #DD6161;
 
+.main_content{
+	width: 100%;
+	min-height: 150px;
+	margin: 1rem 1%;
+	padding: 1.5rem 2.5%;
+	float: left;
+	border-radius: .4rem;
+	position: relative;
+    background: rgb(255,255,255); /* for IE */
+    background: rgba(255,255,255,0.5);
+}
+.description{
+	min-width: 36%;
+	min-height: 150px;
+	margin-top: 2rem;
+}
+
 .recipe {
 background: #fff;
 border-radius: 15px;

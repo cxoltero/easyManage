@@ -36,7 +36,7 @@ class MonthsController < ApplicationController
 
 	def destroy
 		@month.destroy
-		redirect_to root_path, notice: "Succesfully deleted Month!"
+		redirect_to months_path, notice: "Succesfully deleted Month!"
 	end
 
 

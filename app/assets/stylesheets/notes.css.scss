@@ -28,20 +28,30 @@
 	}
 }
 
-
 #note_show {
+	border-radius: 5px;
+    background: rgb(255,255,255); /* for IE */
+    background: rgba(255,255,255,0.5);
+    width: 50%;
+    height: 400px;
+    margin-left: 25%;
 	.title {
-	font-size: 2.5rem;
+	font-size: 3.5rem;
+	text-align: center;
 	margin-bottom: 1.25rem;
 	padding-bottom: 1rem;
-	border-bottom: 1px solid #E9E9E9;
+	border-bottom: 1px solid #5a6636;
 	}
 	p {
+	padding: 0 2em;
 	font-size: 1.375rem;
 	line-height: 1.75;
 	}
+}
 
-	.buttons {
+.buttons {
+    width: 50%;
+    margin-left: 25%;
 	margin-top: 3rem;
 		a.button {
 		padding: .5rem 2rem;
@@ -50,6 +60,5 @@
 		color: green;
 		border: 5px solid #E9E9E9;
 		background: transparent;
-	}
-}
+		}
 }

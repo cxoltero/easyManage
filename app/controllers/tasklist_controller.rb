@@ -36,7 +36,7 @@ class TasklistController < ApplicationController
 
 	def destroy
 		@tasklist.destroy
-		redirect_to root_path, notice: "Succesfully deleted list!"
+		redirect_to tasklist_index_path, notice: "Succesfully deleted list!"
 	end
 
 

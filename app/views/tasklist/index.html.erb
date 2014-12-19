@@ -3,16 +3,12 @@
     <%= link_to "Add List", new_tasklist_path %>
   </div>
   <div class="tasklist">
-    <% @tasklists.each_slice(4) do |tasklists| %>
-      <div class="row" id="tasklist">
+    <% @tasklists.each_slice(3) do |tasklists| %>
+      <div class="row">
         <% tasklists.each do |tasklist| %>
-          <div class="col-md-3">
-            <div class="tasklist">
-              <h2><%= link_to tasklist.title, tasklist %></h2>
-            </div>
-    		<div class="date">
-    	        <small>Created on <%= tasklist.created_at.strftime("%B, %d, %Y") %></small>
-            </div>
+          <div class=".col-md-4" id = "a1">
+              <h2><span class="glyphicon glyphicon-check "></span><%= link_to tasklist.title, tasklist %></h2>
+    	        <h6>Created on <%= tasklist.created_at.strftime("%B, %d, %Y") %></h6>
           </div>
         <%end%>
       </div>

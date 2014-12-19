@@ -18,6 +18,8 @@
  @import "notes.css.scss";
  @import "welcome.css.scss";
  @import "recipes.css.scss";
+ @import "tasklist.css.scss";
+ @import "month.css.scss";
 
 
 @mixin box-shadow {
@@ -80,6 +82,10 @@ border-radius: 5px;
 @include box-shadow;
 background: white;
 font-weight: bold;
+}
+
+footer{
+  margin-top: 30px;
 }
 
 

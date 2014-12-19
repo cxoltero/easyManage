@@ -18,16 +18,10 @@
         </a>
       <% end %>
     <% else %>
-
-    <h2>Add a Note</h2>
-    <p>It appears you haven't created any notes yet... Lets fix that. Why don't you go ahead and create a new note.</p>
-    <button>
-
-    </button>
-		</div>
-		<%= link_to "All Notes", notes_path(@note), class: "button" %>
+      <h2>Add a Note</h2>
+      <p>It appears you haven't created any notes yet... Lets fix that. Why don't you go ahead and create a new note.</p>
+  		<%= link_to "All Notes", notes_path(@note), class: "button" %>
 			<%= link_to "Back", root_path, class: "btn btn-default" %>
-		</div>
     <% end %>
   </div>
 </div>

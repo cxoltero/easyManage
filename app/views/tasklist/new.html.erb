@@ -1,7 +1,8 @@
 <div class="container">
-<h1>New List</h1>
-<%= render 'form' %><br>
-<%= link_to "All Lists", tasklist_index_path(@tasklist), class: "button" %>
-<%= link_to "Back", tasklist_index_path, class: "btn btn-default" %>
-
+  <div class="tasklist">
+	<h1>New List</h1>
+	<%= render 'form' %><br>
+	<%= link_to "All Lists", tasklist_index_path(@tasklist), class: "btn btn-default" %>
+	<%= link_to "Back", tasklist_index_path, class: "btn btn-default" %>
+	</div>
 </div>
