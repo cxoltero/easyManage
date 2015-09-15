@@ -59,15 +59,17 @@ box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
   font-size: 20px;
   font-weight: bold;
   border-radius:4px;
-  /*border-bottom-width: 4px;
-  border-bottom-style: solid;*/
-  /*border-bottom-color: #FF6600;*/
   color: white !important;
   background-color: orange !important;
 }
 
+.navbar-brand a:hover{
+  text-decoration: none;
+  color: red;
+}
+
 body {
-  background: gray url(http://cincodemayova.com/wp-content/uploads/2014/08/background.jpg) no-repeat top center fixed; 
+  background: gray url(http://isinglassinc.com/wp-content/uploads/2015/03/restaurant-food-01.jpg) no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -92,6 +94,10 @@ footer{
 .jumbotron{
   width: 95%;
   margin-left: 2.5%;
+}
+
+.navbar-brand hover{
+  text-decoration: none;
 }
 
 
