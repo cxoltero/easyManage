@@ -36,13 +36,14 @@ box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
     height: 150px;
     padding: 50px 10%;
     background-color: black;
-      h1 {
+      h1{
       font-family: 'Sansita One', cursive;
       margin-top:10px;
       line-height: 10px;
       letter-spacing: -1px;
       font-weight: bold;
       font-size: 55px;
+      color: yellow;
       }
       a{
       color: white;
@@ -65,7 +66,10 @@ box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
 
 .navbar-brand a:hover{
   text-decoration: none;
-  color: red;
+  color: yellow;
+}
+.navbar-brand a{
+  color: orange;
 }
 
 body {
